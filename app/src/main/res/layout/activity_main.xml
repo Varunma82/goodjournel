@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F3CCFF"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/shadowsintolight"
+        android:text="December 12, 2022"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/today_date"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What three things happened today?"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/shadowsintolight"
+        android:textStyle="bold"
+        android:layout_below="@id/today_date"
+        android:layout_marginLeft="50dp"
+        android:textAlignment="center"
+        android:layout_marginRight="50dp"
+        android:id="@+id/three_things_good"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="...just remember, darling, it is pain that changes our lives."
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/three_things_good"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:textAlignment="center"
+        android:id="@+id/quote"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1."
+        android:textSize="20sp"
+        android:layout_below="@id/quote"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:id="@+id/firstno."
+        android:layout_marginLeft="25dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="One good thing:"
+        android:textColor="#857E7E"
+        android:ems="15"
+        android:layout_toRightOf="@id/firstno."
+        android:layout_below="@id/quote"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/first_one_good_thing"
+        android:textColorHint="#857E7E"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I felt "
+        android:textColor="#857E7E"
+        android:ems="15"
+        android:layout_toRightOf="@id/firstno."
+        android:layout_below="@id/first_one_good_thing"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/first_felt"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2."
+        android:textSize="20sp"
+        android:layout_below="@id/first_felt"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/secondno."
+        android:layout_marginLeft="25dp"/>
+
+    <EditText
+        android:textColorHint="#857E7E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="One good thing:"
+        android:ems="15"
+        android:textColor="#857E7E"
+        android:layout_toRightOf="@id/secondno."
+        android:layout_below="@id/first_felt"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/second_one_good_thing"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I felt "
+        android:textColor="#857E7E"
+        android:ems="15"
+        android:layout_toRightOf="@id/secondno."
+        android:layout_below="@id/second_one_good_thing"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/second_felt"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3."
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/second_felt"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:id="@+id/thirdno."
+        android:layout_marginLeft="25dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="One good thing:"
+        android:ems="15"
+        android:textColor="#857E7E"
+        android:textColorHint="#857E7E"
+        android:layout_toRightOf="@id/thirdno."
+        android:layout_below="@id/second_felt"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/third_one_good_thing"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I felt "
+        android:textColor="#857E7E"
+        android:ems="15"
+        android:layout_toRightOf="@id/thirdno."
+        android:layout_below="@id/third_one_good_thing"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/third_felt"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/third_felt"
+        android:text="_____"
+        android:id="@+id/underscore"
+        android:textColor="#857E7E"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/underscore"
+        android:text="Can't think of anything?"
+        android:backgroundTint="#F2CCFF"
+        android:textSize="10sp"
+        android:visibility="visible"
+        android:textAllCaps="false"
+        android:outlineProvider="none"
+        android:layout_centerHorizontal="true"
+        android:textColor="#857E7E"
+        android:id="@+id/can_think"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/can_think"
+        android:text="Share your wins today with loved ones:"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:id="@+id/share_your"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/linear_memo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/share_your"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:id="@+id/save"
+            android:text="Save the entry"
+            android:backgroundTint="#F1FFCC"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/memo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:text="Memories"
+            android:onClick="setcolor_click"
+            android:backgroundTint="#F1FFCC"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linear_memo"
+        android:text="Share this app"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#F1FFCC"
+        android:id="@+id/share_your_app"
+        android:textColor="@color/black"
+        android:ems="15"
+        />
+
+
+</RelativeLayout>
